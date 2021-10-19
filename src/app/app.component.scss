@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+
+  .block {
+    width: 80%;
+
+    .mat-radio-button ~ .mat-radio-button {
+      margin-left: 16px;
+    }
+
+    .table {
+      display: flex;
+      margin-top: 40px;
+
+      &-col {
+        padding: 10px;
+        border: 1px solid #b5b5b5;
+
+        &:not(:first-child) {
+          border-left: none;
+        }
+      }
+    }
+  }
+
+}
